@@ -1,0 +1,288 @@
+.container-fluid{
+  padding-left:0  !important; /*no white space*/
+  padding-right:0 !important;
+}
+
+/* styling the navbar */
+nav{
+  padding-left: 5vw;
+  padding-right:5vw;
+}
+
+.nav-item a{
+  color: #fff !important;
+  font-family: "Playfair+Display";
+  font-weight: bolder;
+  font-size: 1.2rem;
+   
+}
+
+.nav-item a:hover{
+ text-shadow: 0 0 2rem #000;
+}
+
+
+#hero{
+  background: url(img/bigimg6.jpg) no-repeat center center;
+  background-size: cover;
+  background-color:#041d20;
+  background-blend-mode: screen;  /*nice filter effect on hero pic*/
+  height: 100vh;
+  margin-bottom: 0;
+  /*using flexbox to make neat centering of quotes*/
+  display: flex;    
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.quotesbox{
+  font-family: 'Niramit';
+  font-size: 1.5rem;
+  color: #f5f4f4;
+  font-style: italic;
+}
+
+.focus{
+  font-family: "Playfair+Display";
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #dff3ed;
+}
+
+
+#hero>div{
+  width: 50vw;
+  text-align: center;
+}
+
+
+/*styling the effect where portfolio section will only show when click onto the start_ups nav link*/
+.portfolio-stack{
+  display: none;
+}
+
+.portfolio{
+  height: 25vh;
+  width: 100vw;
+  /*setting a nice gradient color for the portforlio bar*/
+  background-image:linear-gradient(#55ebd2,#98e4d3 80%,#cff0e6);  
+  opacity: 0.8;
+  /*using flexbox to make neat centering of quotes*/
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+  color: #636866;
+}
+
+.portfolio h3{
+  color: #fff;
+}
+
+.portfolio-title{
+  margin-top: 10vh;
+  padding-top: 10vh;
+  margin-bottom: 10vh;
+  font-family: "Playfair+Display";
+}
+
+/*section at the bottom of the portfolio to include contact icons for links*/
+.portfolio-foot{
+  width: 100vw;
+  background-color: #e7eeec;
+}
+
+.portfolio-foot h4{
+  margin: 0 5vw;
+  padding: 2vh 5vw;
+  color:#636866; 
+  text-align:center;
+}
+
+.contact-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.icon a{
+  color:#55ebd2;
+  margin: 5vh 5vw;
+}
+
+/* each of the portfolio div can be clicked to show the detail of the portfolio in the portfolio-info class*/
+.portfolio-info{
+  width: 76vw;
+  padding-top: 2vh;
+  display: flex;
+  flex-flow:row wrap;
+  font-family: Niramit;
+  border: solid 0.5px #cff0e6;
+}
+
+/* once .portfolio-info is open, the door icon allow closing */
+.p-mission{
+  width: 45vw;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.p-gallery{
+  width: 30vw;
+  height: 20vh; 
+  border: solid 1px #cff0e6;
+  border-radius: 100px;
+  padding-top: 2vh;
+  text-align:center;
+}
+
+.p-gallery img{
+  width:20vw;
+}
+
+.p-divider{
+  margin: 0 2vh 2.5vw 2.5vw;
+  width:70vw;
+  border: #cff0e6 dotted 2px;
+}
+
+.p-status{
+  width:75vw;
+  font-size: 1.3rem;
+  padding:10px;
+}
+
+h5{
+  text-decoration-line: underline;
+}
+
+.btn{
+  margin-top:1vh;
+  color:#fff;
+
+}
+
+
+
+/*about me section divides into two parts where the show-off article show little gadgit or mini-program or mini work done and the text-container div contains my descriptions*/
+
+.about-wrapper{
+  display: none;
+}
+
+.about{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.show-off{
+  background-image:linear-gradient(#55ebd2,#98e4d3 80%,#cff0e6);
+  width: 100vw;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#temp-api{
+  color: #cff0e6;
+  font-size: 1.2rem;
+}
+
+#temp-api span{
+  font-weight: bold;
+}
+
+.text-container{
+  background-color:#e7eeec;
+  width: 100vw;
+  padding: 5vh 15vw;
+  color:#55ebd2;
+  font-family: "Niramit" ;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#about-status{
+  margin: 5vh;
+  padding: 1vh 2vw;
+  font-size: 1.2rem;
+  background-color:#fff;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width:420px){
+  /*very mobile*/
+
+  .quotesbox{
+    font-size: 1rem;
+
+  }
+  
+   .p-mission{
+    width: 100vw;
+    font-size: 1rem;
+  }
+  
+  .p-gallery{
+    width: 100vw;
+  }
+  
+  .p-gallery img{
+    width:50vw;
+  }
+  
+  .p-divider{
+    width:70vw;
+  }
+  
+  .p-status{
+    width:100vw;
+    font-size: 1rem;
+  }
+ 
+}
+
+@media only screen and (min-width:1000px){
+/* For desktop */
+.about{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+  .show-off{
+    background-image:linear-gradient(to right, #55ebd2,#98e4d3 80%,#cff0e6);
+    width: 40vw;
+    height: 75vh;
+
+  }
+
+  
+.text-container{
+  width: 58vw;
+  padding: 5vh 5vw;
+  font-size: 1.1rem;
+
+}
+
+#about-status{
+  font-size: 1rem;
+}
+
+.portfolio-foot{
+  background-color: #fff;
+}
+
+.portfolio-foot h4{
+  font-size: 1.3rem;
+}
+
+
+#temp-api{
+  font-size: 1.4rem;
+}
+
+
+}
+
