@@ -13,7 +13,7 @@ let ranNum = function(length){
 
         const city = cities[ranNum(cities.length-1)];
 
-        http.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=${city}&apikey=${apikey}`)
+        http.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${city}&apikey=${apikey}`)
 
         http.onreadystatechange = function(){
             if(http.readyState != XMLHttpRequest.DONE){
